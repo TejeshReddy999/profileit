@@ -18,6 +18,7 @@ public class SkillsService {
 
     public ResponseEntity<List<Skills>> getUserSkills() {
         return new ResponseEntity<>(skillsRepo.findAll(), HttpStatus.OK);
+
     }
 
     public ResponseEntity<List<Skills>> addUserSkills(List<Skills> skills) {
